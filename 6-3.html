@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+
+</head>
+<body>
+   <script>
+var Cat=function(name){
+	this.name=name
+}
+Cat.prototype.showname=function(){
+	return "我是prototype"
+}
+var cat=new Cat("小红");
+console.log(Object.getPrototypeOf(cat))
+var Person=function(){
+        
+}
+Person.prototype.showname=function(){
+	return "hello"
+}
+var person1=new Person();
+console.log(Object.setPrototypeOf(cat,person1))
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>6</title>
+<style>
+	.active{background: blue;}
+	div{display:none;}
+	.show{display:block;}
+</style>
+</head>
+<body>
+   <input type="button" value="tab1" class="active">
+    <input type="button" value="tab2" >
+    <input type="button" value="tab3" > 
+    <div class="show">1</div>
+    <div>2</div>
+    <div>3</div>
+<script>
+	window.onload=function(){
+		"use strict"
+		var oBtn=document.getElementsByTagName('input');
+		var oDiv=document.getElementsByTagName('div');
+		// for(var i=0; i<oBtn.length; i++){
+		// 	oBtn[i].index=i;
+		// 	oBtn[i].onclick=function(){
+		// 		for(var j=0; j<oBtn.length; j++){
+		// 			oBtn[j].className='';
+		// 			oDiv[j].className='';
+		// 		}
+		// 	this.className='active';
+		// 	oDiv[this.index].className='show';
+		// 	}
+		// }
+		// for(let i=0; i<oBtn.length; i++){
+		// 	// oBtn[i].index=i;
+		// 	oBtn[i].onclick=function(){
+		// 		for(var j=0; j<oBtn.length; j++){
+		// 			oBtn[j].className='';
+		// 			oDiv[j].className='';
+		// 		}
+		// 	this.className='active';
+		// 	oDiv[i].className='show';
+		// 	}
+		// }
+		(function(a){
+			console.log(a)
+		})(123)
+		// for(var i=0; i<10; i++){
+		// 	(function(a){
+		// 		setTimeout(function(){
+		// 			console.log(a)
+		// 		},100)
+		// 	})(i);
+		// }
+		for(let i=0; i<10; i++){
+			
+				setTimeout(function(){
+					console.log(i)
+				},100)
+			
+		}
+	}
+</script>
+</body>
+</html>
