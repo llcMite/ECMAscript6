@@ -1,0 +1,2 @@
+var name='asdfasdfasdf'
+`${name}你好`
